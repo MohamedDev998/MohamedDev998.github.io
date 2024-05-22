@@ -1,0 +1,499 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: poppins;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* NAVBAR */
+/* .GapBtw {
+          margin-top: 10vh!important;
+} */
+.container{
+    max-width: 80%;
+    width: 100%;
+    padding: 4% 0;
+    margin: 0 auto;
+}
+.leading {
+    line-height: 2rem;
+}
+.nav{
+
+   
+    margin: 0 auto;
+    
+    padding: 2rem 3rem;
+}
+.Nav {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.Logo{
+    flex: 1;
+}
+.nav_header{
+    width: 100%;
+}
+.Logo span:hover{
+    transform: scale(1.2);
+}
+/* .Nav-list{
+    flex: 3;
+    margin-left: auto;
+    justify-content: end;
+} */
+ul{
+    margin: 0;
+}
+.Nav-item{
+    margin-right: 1.5rem;
+    
+}
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.Nav-item a::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #58A9E4;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease ;
+
+}
+.Nav-item a:hover{
+    color:#58A9E4 ;
+    transition: all 1s ease ;
+}
+.S-transition{
+    transition: all 1s ease ;
+}
+
+.Nav-item a:hover::after{
+    opacity: 1;
+}
+
+.MenuBtn {
+    display: none;
+}
+.shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.textshadow {
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.Nav-list.SubMenu{
+
+    flex-direction: column;
+}
+ .Nav-item {
+    width: fit-content;
+}
+.Nav-list {
+    transition: all 1s ease ;
+   
+}
+
+.Nav-item li {margin-top: 2rem;}
+/* NAVBAR */
+
+
+/* HERO */
+.Hero {
+   height: 600px;
+    position: relative;
+    
+}
+.Hero::before{
+    content: '';
+    background-image: url("/IMG/Hero.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.Hero h1{
+    font-family: "Poppins";
+    color: white;
+    line-height: 1em;
+    
+}
+
+.Hero .content {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+
+}
+/* HERO */
+
+/* Advantages */
+.Advantages h4{
+    border-bottom: 2px solid salmon;
+    width: fit-content;
+}
+.advContent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5rem;
+}
+.advImg{
+    background-image: url(/IMG/Aparrt/Apprt6.jpg);
+    max-width: 100%;
+    min-height: 22rem;
+    background-size: cover;
+}
+.advImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+.adv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: fit-content;
+        margin: auto 0;
+}
+.subAdv{
+    text-align: center;
+}
+.subAdv i{
+    font-size: 2rem;
+}
+/* Advantages */
+
+.Show { 
+    height: 100vh!important;
+    overflow: hidden;
+    padding-top: 10rem;
+}
+.MenuBtn {
+    display: none;
+}
+
+
+/* Explore  */
+
+
+
+.explore{
+   
+    background-color: black;
+    padding: 5rem;
+    
+}
+.explore_wrapper{
+   display: flex;
+   /* flex-wrap: wrap; */
+   gap: 3em;
+}
+.text_content {
+    margin: auto;
+    flex: 1;
+}
+
+.text_content a{
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+}
+.text_content h3 {
+    line-height: 3rem;
+}
+.text_content .btn {
+    margin-top: 2rem !important;
+}
+.text_content *{
+    color: white;
+}
+.text_content span{
+    color: black;
+}
+
+.explore_imgs  {
+    
+    min-height: 100%;
+    width: 100%;
+   flex: 1;
+
+
+    /* display: flex; */
+}
+.explore_imgs img {
+    background-size: cover;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    background-image: url('/IMG/Aparrt/Apprt4.jpg');
+}
+
+
+/* Explore  */
+/* property  */
+
+.card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: 1fr;
+    gap: 3rem;
+    max-width: 1500px;
+
+}
+.carousel {
+    position: relative;
+    max-width: 400px;
+    
+  }
+  
+  .carousel__item {
+    height: 300px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    display: none;
+    border-radius: 10px;
+  }
+  .carousel__item img  {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+ 
+
+ 
+  .carousel__item--selected {
+    display: block;
+  }
+  
+  .carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel__button--selected {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  
+  
+
+/* property  */
+
+/* WhyChoseUs */
+/* .WhyChoseUs{
+    
+} */
+.WhyChoseUs_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+}
+.WhyChoseUs_wrapper-img{
+   display: flex;
+   align-items: center; 
+   padding: 3em;
+}
+.WhyChoseUs_wrapper-img img {
+ height: auto;
+width: 100%;
+object-fit: cover;
+/* padding: 1rem 4rem; */
+
+}
+.WhyChoseUs_wrapper-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+.feature i {
+    font-size: 2rem;
+    width: 30px;
+}
+/* WhyChoseUs */
+/* Testimonials */
+.card {
+   max-width: 300px;
+    /* background-color: #58A9E4; */
+    box-shadow: 0px 1px 20px 14px rgba(0, 0, 0, 0.1);
+    /* inset 0 3px 6px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    padding: 3em 0;
+    border-radius: 50px;
+}
+
+.img-holder {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border:5px solid #ffffff;
+    margin: 0 auto;
+}
+.img-holder img {
+    width: 100%;
+}
+
+.Testimonials-wrrapper{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Testimonials */
+/* Footer */
+
+Footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 2rem;
+} 
+.Footer_nav{
+    padding: 1re;;
+}
+.Footer_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+
+}
+.Nav-footer {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+/* Footer */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .prop_wrapper{
+       
+        grid-template-columns: 1fr!important;
+       
+      
+    }
+    .carousel {
+        
+        max-width: 100%;
+        
+      }
+      .Footer_wrapper {
+      
+        grid-template-columns:  1fr ;
+    }
+     
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Nav-list{
+        display: flex;
+    }
+   
+}
+@media only screen and (max-width: 992px) {
+
+    .MenuBtn {
+        display: block;
+    }
+.Nav{
+    flex-direction: column;
+}
+   .Nav-list{
+    flex-direction: column;
+    /* height: 100vh; */
+    height: 0;
+    overflow: hidden;
+      }
+    
+      .explore{
+      
+        grid-template-columns:   1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .advContent{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .explore_wrapper{
+        flex-direction: column;
+     }
+     .WhyChoseUs_wrapper{
+        grid-template-columns: 1fr;
+      }
+   
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+
+}
